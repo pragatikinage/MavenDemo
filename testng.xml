@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<groups>
+		<run>
+			<!-- <include name="Smoke"> </include> -->
+			<exclude name="E2E"></exclude>
+		</run>
+
+	</groups>
+
+	<!--  <listeners>
+		<listener class-name="com.paramedutech.project.Listener">
+
+		</listener>
+	</listeners>-->
+
+	<test thread-count="4" name="Test" parallel="methods">
+
+		<classes>
+			<!-- <class name="Tsetng.HardsoftAssert"/> -->
+			<!--  <class name="Tsetng.GroupsTestNg" />-->
+			<class name="Tsetng.ParallelExecution" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
